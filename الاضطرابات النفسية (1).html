@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>13 مرض نفسي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1fb;--card:#fff;--ink:#1f1b2e;--mute:#6b6585;--a:#6d4aff;--b:#ff7ab6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14111f;--card:#1e1a2f;--ink:#f1eefc;--mute:#a59fc2}}
+:root[data-theme="dark"]{--bg:#14111f;--card:#1e1a2f;--ink:#f1eefc;--mute:#a59fc2}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo',Tahoma,Arial,sans-serif;min-height:100vh}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+.bar{height:6px;background:rgba(127,127,160,.2);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--b));transition:width .4s}
+.meta{display:flex;justify-content:space-between;color:var(--mute);font-size:14px;margin:10px 2px 18px}
+.card{background:var(--card);border-radius:24px;padding:32px 28px;box-shadow:0 10px 40px rgba(80,60,160,.15);animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+.num{display:inline-block;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;font-weight:800;border-radius:14px;padding:4px 16px;font-size:18px}
+h1{font-size:clamp(28px,6vw,44px);margin:14px 0 4px;font-weight:800}
+.en{color:var(--a);font-weight:600;margin:0 0 16px;direction:ltr;text-align:right}
+.by{display:inline-block;background:rgba(255,122,182,.15);border-radius:10px;padding:2px 12px;margin:0 0 14px;font-weight:600}
+.def{font-size:18px;line-height:1.9;margin:0 0 22px}
+h2{font-size:17px;margin:20px 0 10px;color:var(--a)}
+ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+li{background:rgba(109,74,255,.08);border-radius:12px;padding:10px 14px;line-height:1.7}
+.tx{background:linear-gradient(135deg,rgba(109,74,255,.12),rgba(255,122,182,.12));border-radius:14px;padding:14px 16px;line-height:1.8}
+.nav{display:flex;gap:12px;margin-top:22px}
+button{font:inherit;font-weight:700;border:0;border-radius:16px;padding:14px 22px;cursor:pointer;transition:transform .15s}
+button:active{transform:scale(.96)}
+#next{flex:1;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;font-size:18px}
+#prev{background:var(--card);color:var(--ink);box-shadow:0 2px 12px rgba(80,60,160,.15)}
+button:disabled{opacity:.35;cursor:default}
+.note{text-align:center;color:var(--mute);font-size:13px;margin-top:18px}
+:root{--h:265;--a:hsl(var(--h) 75% 58%);--b:hsl(calc(var(--h) + 45) 85% 68%)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 12% 8%,color-mix(in srgb,var(--a) 32%,transparent),transparent 45%),radial-gradient(circle at 92% 92%,color-mix(in srgb,var(--b) 32%,transparent),transparent 45%)}
+.card{position:relative;overflow:hidden;border:1px solid color-mix(in srgb,var(--a) 25%,transparent)}
+.wm{position:absolute;left:14px;top:-18px;font-size:170px;font-weight:800;color:color-mix(in srgb,var(--a) 10%,transparent);line-height:1;pointer-events:none}
+.ico{width:68px;height:68px;border-radius:20px;display:grid;place-items:center;font-size:36px;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 8px 24px color-mix(in srgb,var(--a) 45%,transparent);margin-bottom:6px}
+.num{background:none;color:var(--a);padding:0;font-size:15px;letter-spacing:1px}
+.by{background:color-mix(in srgb,var(--b) 20%,transparent)!important}
+.en{color:var(--a)}h2{color:var(--a)}
+ul{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+li{background:color-mix(in srgb,var(--a) 10%,transparent);border:1px solid color-mix(in srgb,var(--a) 22%,transparent);border-radius:16px;padding:14px;display:flex;gap:10px;align-items:flex-start}
+li b{background:var(--a);color:#fff;border-radius:50%;min-width:26px;height:26px;display:grid;place-items:center;font-size:13px}
+.tx{background:linear-gradient(135deg,color-mix(in srgb,var(--a) 16%,transparent),color-mix(in srgb,var(--b) 16%,transparent));border-right:5px solid var(--a)}
+#next{background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 8px 22px color-mix(in srgb,var(--a) 40%,transparent)}
+.fill2,#fill{background:linear-gradient(90deg,var(--a),var(--b))!important}
+#menu{padding:6px 14px;font-size:14px;background:var(--card);color:var(--ink);border-radius:12px;box-shadow:0 2px 10px rgba(80,60,160,.15)}
+.cover{text-align:center}.cover h1{font-size:clamp(34px,8vw,60px);background:linear-gradient(135deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cover p{color:var(--mute);font-size:18px}
+.go{background:linear-gradient(135deg,var(--a),var(--b));color:#fff;font-size:20px;padding:14px 38px;margin:8px 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;text-align:right}
+.chip{background:color-mix(in srgb,var(--c) 12%,transparent);border:1px solid color-mix(in srgb,var(--c) 35%,transparent);color:var(--ink);border-radius:16px;padding:12px;display:flex;gap:10px;align-items:center;font-size:15px;line-height:1.5}
+.chip span{font-size:26px}.chip small{display:block;color:var(--mute);font-weight:400}
+.chip:hover{transform:translateY(-3px)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar"><i id="fill"></i></div>
+  <div class="meta"><button id="menu">☰ القائمة</button><span id="count"></span></div>
+  <div id="slide"></div>
+  <div class="nav" id="nav"><button id="prev">السابق</button><button id="next">المرض التالي ←</button></div>
+  <p class="note">معلومات تثقيفية عامة، مش بديل للتشخيص عند طبيب نفسي.</p>
+</div>
+<script>
+const D=[
+["اضطراب استخدام القنب (الحشيش)","Cannabis Use Disorder","نمط استخدام مستمر للقنب رغم أضراره، مع صعوبة في التوقف عنه.",["استخدام بكميات أو مدة أكبر من المخطط","تحمّل وأعراض انسحاب (عصبية، أرق، قلة شهية)","إهمال الدراسة أو الشغل والعلاقات"],"العلاج التحفيزي (MET) والعلاج المعرفي السلوكي، ومفيش دواء معتمد محدد.","—"],
+["اضطراب استخدام الكحول","Alcohol Use Disorder","استخدام مفرط ومستمر للكحول مع فقدان السيطرة على الشرب.",["الشرب أكتر من المقصود","أعراض انسحاب (رعشة، تعرّق، قلق)","الاستمرار رغم مشاكل صحية واجتماعية"],"سحب السموم تحت إشراف طبي، أدوية زي نالتريكسون، وعلاج نفسي ومجموعات دعم.","محمد أحمد"],
+["الاكتئاب الشديد","Major Depressive Disorder","حزن مستمر وفقدان الاهتمام بالحياة أسبوعين أو أكتر، ويؤثر على الأداء اليومي.",["مزاج حزين معظم اليوم","تغيّر في النوم والشهية","إحساس بالذنب وقلة القيمة وأفكار سلبية"],"علاج نفسي (CBT) ومضادات اكتئاب حسب شدة الحالة.","هاجر"],
+["اضطراب ما بعد الصدمة (PTSD)","Post-Traumatic Stress Disorder","رد فعل نفسي مستمر بعد التعرّض لحدث صادم زي حادث أو عنف أو كارثة.",["ذكريات وكوابيس متكررة","تجنّب كل ما يذكّر بالحدث","فرط يقظة وتوتر وتغيّرات في المزاج"],"علاج الصدمة (EMDR وCBT) ودعم نفسي، وأدوية مساعدة أحيانًا.","مي"],
+["اضطراب القلق الاجتماعي","Social Anxiety Disorder","خوف شديد من المواقف الاجتماعية والخوف من الحكم أو الإحراج.",["تجنّب التجمعات والكلام أمام الناس","احمرار وتعرّق ورجفة","قلق مسبق وتفكير زايد بعد المواقف"],"العلاج المعرفي السلوكي والتعرّض التدريجي، وأحيانًا أدوية SSRIs.","إيمان عبد الرحيم"],
+["اضطراب نقص الانتباه وفرط الحركة","ADHD","اضطراب نمائي يؤثر على الانتباه والنشاط والتحكم في الاندفاع.",["صعوبة التركيز وإنهاء المهام","نسيان وفقدان الأشياء","حركة زايدة واندفاع"],"علاج سلوكي وتنظيم الروتين وأدوية منشّطة أو غير منشّطة.","محمد هشام"],
+["الوسواس القهري","Obsessive-Compulsive Disorder","أفكار مزعجة متكررة (وساوس) بيصاحبها سلوكيات إجبارية لتخفيف القلق.",["غسيل أو تنظيف متكرر","التأكد المستمر من الأشياء","أفكار دخيلة صعب إيقافها"],"التعرّض ومنع الاستجابة (ERP) مع أدوية SSRIs.","محمد كمال"],
+["اضطراب الهلع","Panic Disorder","نوبات مفاجئة من خوف شديد بتوصل لقمتها في دقايق، مع خوف من تكرارها.",["خفقان وضيق تنفس","دوخة ورجفة وتعرّق","خوف من الموت أو فقدان السيطرة"],"العلاج المعرفي السلوكي والتعرّض التدريجي، وأحيانًا أدوية.","جيهان"],
+["اضطراب الشخصية النرجسية","Narcissistic Personality Disorder","نمط ثابت من الشعور بالعظمة والحاجة للإعجاب وقلة التعاطف.",["إحساس مبالغ بالأهمية","استغلال الآخرين","حساسية شديدة للنقد"],"علاج نفسي طويل المدى (علاج المخططات والديناميكي)، ومفيش دواء مخصص.","محمد إبراهيم"],
+["الفصام","Schizophrenia","اضطراب شديد في التفكير والإدراك والتواصل مع الواقع.",["هلاوس (سماع أصوات)","أوهام ثابتة","انسحاب وتبلّد في المشاعر"],"مضادات الذهان وتأهيل نفسي واجتماعي ودعم الأسرة.","مريم محمد محمود"],
+["اضطراب الشخصية التجنبية","Avoidant Personality Disorder","تجنّب العلاقات والمواقف الاجتماعية بسبب الخوف من الرفض وإحساس بالنقص.",["خوف شديد من النقد والرفض","تجنّب العلاقات إلا مع ضمان القبول","نظرة سلبية للنفس"],"العلاج المعرفي السلوكي وعلاج المخططات وتدريب المهارات الاجتماعية.","مريم محمد رضا"],
+["اضطراب الشخصية الحدّية","Borderline Personality Disorder","عدم استقرار في المشاعر والعلاقات وصورة الذات.",["مشاعر قوية ومتقلبة بسرعة","خوف شديد من الهجر","اندفاع وسلوك مؤذٍ للنفس"],"العلاج الجدلي السلوكي (DBT) هو الأكثر فعالية.","مريم رضا"],
+["اضطراب ثنائي القطب","Bipolar Disorder","تقلبات حادة في المزاج بين نوبات هوس ونشاط زائد ونوبات اكتئاب.",["طاقة عالية وقلة نوم وقت الهوس","اندفاع وقرارات متهورة","فترات اكتئاب عميقة"],"مثبّتات المزاج مع علاج نفسي ومتابعة منتظمة.","إيمان السيد"]
+];
+const IC=["🌿","🍷","🌧️","⚡","🫣","🎯","🔁","💓","🪞","🧩","🚪","🎭","🎢"];
+const H=[140,350,215,45,280,25,190,0,320,255,165,335,95];
+let i=-1;const $=id=>document.getElementById(id),R=document.documentElement;
+function go(n){i=n;show()}
+function show(){
+  const nav=$('nav');
+  if(i<0){
+    R.style.setProperty('--h',265);nav.style.display='none';
+    $('slide').innerHTML=`<div class="card cover"><div class="ico" style="margin:0 auto 10px">🧠</div><h1>الاضطرابات النفسية</h1><p>١٣ حالة · ١٣ مقدّم · رحلة في فهم العقل</p><button class="go" onclick="go(0)">ابدأ العرض ←</button><div class="grid">${D.map((d,k)=>`<button class="chip" style="--c:hsl(${H[k]} 75% 58%)" onclick="go(${k})"><span>${IC[k]}</span><div>${d[0]}<small>${d[5]!=="—"?d[5]:""}</small></div></button>`).join('')}</div></div>`;
+    $('count').textContent='القائمة';$('fill').style.width='0';
+  } else {
+    R.style.setProperty('--h',H[i]);nav.style.display='flex';
+    const [n,en,def,sy,tx,p]=D[i];
+    $('slide').innerHTML=`<div class="card"><div class="wm">${i+1}</div><div class="ico">${IC[i]}</div><span class="num">المرض ${i+1} من ${D.length}</span><h1>${n}</h1><p class="en">${en}</p>${p!=="—"?`<p class="by">تقديم: ${p}</p>`:""}<p class="def">${def}</p><h2>أهم الأعراض</h2><ul>${sy.map((s,k)=>`<li><b>${k+1}</b><span>${s}</span></li>`).join('')}</ul><h2>العلاج</h2><div class="tx">${tx}</div></div>`;
+    $('count').textContent=`${i+1} / ${D.length}`;
+    $('fill').style.width=((i+1)/D.length*100)+'%';
+    $('prev').disabled=false;
+    $('next').textContent=i===D.length-1?'العودة للقائمة ↺':`التالي: ${D[i+1][0]} ←`;
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+const next=()=>{i=i>=D.length-1?-1:i+1;show()},prev=()=>{i=i<=-1?-1:i-1;show()};
+$('next').onclick=next;$('prev').onclick=prev;$('menu').onclick=()=>go(-1);
+document.onkeydown=e=>{if(e.key==='ArrowLeft')next();if(e.key==='ArrowRight')prev()};
+let tx0=0;document.ontouchstart=e=>tx0=e.touches[0].clientX;
+document.ontouchend=e=>{const d=e.changedTouches[0].clientX-tx0;if(Math.abs(d)>70&&i>=0)d<0?next():prev()};
+show();
+</script>
+</body>
+</html>
